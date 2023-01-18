@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div>
-      <div className="inset-x-0 top-0 bg-[#EFF1F3] fixed px-8 border-4 flex flex-row border-b-white">
+      <div className="drop-shadow-md inset-x-0 top-0 z-20 bg-[#EFF1F3] fixed px-8 border-4 flex flex-row border-b-white">
         <img
           alt="logo"
           src={require("../assets/olx.png")}
@@ -55,9 +55,6 @@ const Navbar = () => {
         <div className="border-4 border-t-cyan-400 border-l-yellow-300 border-b-indigo-500 border-r-indigo-500 rounded-full w-28 mx-6 px-6 pt-2 h-12 mt-1">
           <span><b>+ </b>JUAL</span>
         </div>
-      </div>
-      <div>
-        <span>Semua Kategori</span>
       </div>
     </div>
   );
