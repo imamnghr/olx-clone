@@ -1,49 +1,41 @@
 import React from "react";
 
-
 const Cards = () => {
   return (
-    <div>
-      <div id="default-carousel" className="relative" data-carousel="static">
-        {/* Carousel wrapper */}
-        <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-          {/* Item 1 */}
-          <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <span className="absolute text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 sm:text-3xl dark:text-gray-800">First Slide</span>
-            <img src="/docs/images/carousel/carousel-1.svg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-          </div>
-          {/* Item 2 */}
-          <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-2.svg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-          </div>
-          {/* Item 3 */}
-          <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="/docs/images/carousel/carousel-3.svg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-          </div>
+    <div className="mx-8 mt-16 grid grid-cols-4 gap-4">
+      <div className="w-72 bg-white border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+        <div className="">
+          <a href="#">
+            <img
+              className="inline-block py-2 ml-12"
+              src="https://apollo-singapore.akamaized.net/v1/files/4e6097jup6t71-ID/image;s=300x600;q=60"
+              alt="profile"
+              width={180}
+              height={180}
+            />
+            <img
+            className="inline-block mb-24 ml-7"
+              src={require("../assets/like.png")}
+              alt="like"
+              width={20}
+              height={20}
+            />
+          </a>
         </div>
-        {/* Slider indicators */}
-        <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-          <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to={0} />
-          <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to={1} />
-          <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to={2} />
+        <div className="p-5">
+          <a href="#">
+            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              RP. 145.000.000
+            </h5>
+          </a>
+          <p className="font-normal text-gray-700 dark:text-gray-400">2015</p>
+          <p className="font-thin text-slate-500">
+            Toyota Yaris 2015 Trd Sportifo
+          </p>
         </div>
-        {/* Slider controls */}
-        <button type="button" className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-          <span className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg aria-hidden="true" className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
-            <span className="sr-only">Previous</span>
-          </span>
-        </button>
-        <button type="button" className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-          <span className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg aria-hidden="true" className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-            <span className="sr-only">Next</span>
-          </span>
-        </button>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default Cards
+export default Cards;
